@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Personal Blog</h1>
+    </header>
+    <main id="main-container">
+        <!-- Your blog content will be inserted here by the Rust code -->
+    </main>
+    <footer>
+        <p>© 2023 My Personal Blog</p>
+    </footer>
+    <script type="module">
+        import init, { run } from './pkg/my_blog.js';
+
+        async function main() {
+            await init();
+            run();
+        }
+
+        main();
+    </script>
+</body>
+</html>
